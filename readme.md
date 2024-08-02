@@ -13,7 +13,7 @@ MPLAB® Harmony 3 is an extension of the MPLAB® ecosystem for creating embedded
 This repository contains the MPLAB® Harmony 3 driver, system service and RTOS example applications for PIC32CM-GC/SG family
 
 - [Release Notes](release_notes.md)
-- [MPLAB® Harmony License](mplab_harmony_license.md)
+- [MPLAB® Harmony License](Microchip_SLA001.md)
 
 To clone or download these applications from Github, go to the [main page of this repository](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32cm_sg_gc) and then click **Clone** button to clone this repository or download as zip file.
 This content can also be downloaded using content manager.
@@ -27,8 +27,8 @@ This content can also be downloaded using content manager.
 
 ## Code Examples
 
-[Click here](https://internal.onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CM_SG_GC_INTRODUCTION&redirect=true) to view the documentation for the code examples available in this repository. 
-[Click here](https://internal.onlinedocs.microchip.com/download/GUID-4BCE8A69-E6DF-47BB-BA73-881CBC27599E?type=webhelp) to download the same documentation for offline viewing.
+[Click here](https://onlinedocs.microchip.com/v2/keyword-lookup?keyword=CORE_APPS_PIC32CM_SG_GC_INTRODUCTION&redirect=true) to view the documentation for the code examples available in this repository. 
+[Click here](https://onlinedocs.microchip.com/download/GUID-4BCE8A69-E6DF-47BB-BA73-881CBC27599E?type=webhelp) to download the same documentation for offline viewing.
 ____
 
 [![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/core_apps_pic32cm_sg_gc/blob/master/mplab_harmony_license.md)
