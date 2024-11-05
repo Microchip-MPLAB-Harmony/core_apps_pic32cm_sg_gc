@@ -596,7 +596,7 @@ static void lDRV_USART_WriteSubmit( DRV_USART_OBJ* dObj )
         {
             SYS_DMA_DataWidthSetup(dObj->txDMAChannel, SYS_DMA_WIDTH_16_BIT);
 
-            SYS_DMA_ChannelTransfer(
+            (void) SYS_DMA_ChannelTransfer(
                 dObj->txDMAChannel,
                 (const void *)bufferObj->buffer,
                 (const void *)dObj->txAddress,
@@ -607,7 +607,7 @@ static void lDRV_USART_WriteSubmit( DRV_USART_OBJ* dObj )
         {
             SYS_DMA_DataWidthSetup(dObj->txDMAChannel, SYS_DMA_WIDTH_8_BIT);
 
-            SYS_DMA_ChannelTransfer(
+            (void) SYS_DMA_ChannelTransfer(
                 dObj->txDMAChannel,
                 (const void *)bufferObj->buffer,
                 (const void *)dObj->txAddress,
@@ -650,7 +650,7 @@ static void lDRV_USART_ReadSubmit( DRV_USART_OBJ* dObj )
         {
             SYS_DMA_DataWidthSetup(dObj->rxDMAChannel, SYS_DMA_WIDTH_16_BIT);
 
-            SYS_DMA_ChannelTransfer(
+            (void) SYS_DMA_ChannelTransfer(
                 dObj->rxDMAChannel,
                 (const void *)dObj->rxAddress,
                 (const void *)bufferObj->buffer,
@@ -661,7 +661,7 @@ static void lDRV_USART_ReadSubmit( DRV_USART_OBJ* dObj )
         {
             SYS_DMA_DataWidthSetup(dObj->rxDMAChannel, SYS_DMA_WIDTH_8_BIT);
 
-            SYS_DMA_ChannelTransfer(
+            (void) SYS_DMA_ChannelTransfer(
                 dObj->rxDMAChannel,
                 (const void *)dObj->rxAddress,
                 (const void *)bufferObj->buffer,
@@ -814,6 +814,10 @@ static void lDRV_USART_TX_DMA_CallbackHandler(
     {
         lDRV_USART_BufferQueueTask(dObj, DRV_USART_DIRECTION_TX, DRV_USART_BUFFER_EVENT_ERROR, errorMask);
     }
+    else
+    {
+        /* Nothing to do */
+    }
 }
 
 static void lDRV_USART_RX_DMA_CallbackHandler(
@@ -832,6 +836,10 @@ static void lDRV_USART_RX_DMA_CallbackHandler(
     {
         lDRV_USART_BufferQueueTask(dObj, DRV_USART_DIRECTION_RX, DRV_USART_BUFFER_EVENT_ERROR, errorMask);
     }
+    else
+    {
+        /* Nothing to do */
+    }
 }
 
 // *****************************************************************************
@@ -839,8 +847,8 @@ static void lDRV_USART_RX_DMA_CallbackHandler(
 // Section: USART Driver Common Interface Implementation
 // *****************************************************************************
 // *****************************************************************************
-/* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -
-  H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+/* MISRA C-2012 Rule 11.1, 11.3, 11.8 deviated below. Deviation record ID -
+  H3_MISRAC_2012_R_11_1_DR_1 & H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
 SYS_MODULE_OBJ DRV_USART_Initialize(
     const SYS_MODULE_INDEX drvIndex,
     const SYS_MODULE_INIT* const init
