@@ -60,8 +60,8 @@
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
-#include "driver/memory/drv_memory.h"
 #include "peripheral/pm/plib_pm.h"
+#include "driver/memory/drv_memory.h"
 #include "bsp/bsp.h"
 #include "system/int/sys_int.h"
 #include "osal/osal.h"
@@ -79,13 +79,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CM5112GC00100"
-#define DEVICE_ARCH			 "CORTEX-M23"
-#define DEVICE_FAMILY		 "PIC32CM"
-#define DEVICE_SERIES		 "PIC32CMGC00"
+#define DEVICE_NAME          "PIC32CM5112GC00100"
+#define DEVICE_ARCH          "CORTEX-M23"
+#define DEVICE_FAMILY        "PIC32CM"
+#define DEVICE_SERIES        "PIC32CMGC00"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 72000000
+#define CPU_CLOCK_FREQUENCY 72000000U
 
 // *****************************************************************************
 // *****************************************************************************

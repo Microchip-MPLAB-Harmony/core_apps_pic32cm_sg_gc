@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32cm_gc_curiosity_pro"
-                       displayName="pic32cm_gc_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="pic32cm_gc_curiosity_pro" displayName="pic32cm_gc_curiosity_pro" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32cm_gc_curiosity_pro/bsp/bsp.h</itemPath>
           </logicalFolder>
@@ -57,9 +53,7 @@
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system/ff.h</itemPath>
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system/ffconf.h</itemPath>
                 </logicalFolder>
-                <logicalFolder name="hardware_access"
-                               displayName="hardware_access"
-                               projectFiles="true">
+                <logicalFolder name="hardware_access" displayName="hardware_access" projectFiles="true">
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access/diskio.h</itemPath>
                 </logicalFolder>
               </logicalFolder>
@@ -109,9 +103,7 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="PIC32CM5112GC00100_DFP"
-                       displayName="PIC32CM5112GC00100_DFP"
-                       projectFiles="true">
+        <logicalFolder name="PIC32CM5112GC00100_DFP" displayName="PIC32CM5112GC00100_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/PIC32CM5112GC00100_DFP/component/wdt.h</itemPath>
             <itemPath>../src/packs/PIC32CM5112GC00100_DFP/component/at.h</itemPath>
@@ -204,30 +196,20 @@
       <itemPath>../src/app.h</itemPath>
       <itemPath>../src/nvm_disk_images.h</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="true">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
       <itemPath>Makefile</itemPath>
       <itemPath>nvm_fat_pic32cm_gc_curiosity_pro.mc3</itemPath>
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32cm_gc_curiosity_pro"
-                       displayName="pic32cm_gc_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="pic32cm_gc_curiosity_pro" displayName="pic32cm_gc_curiosity_pro" projectFiles="true">
           <itemPath>../src/config/pic32cm_gc_curiosity_pro/PIC32CM5112GC00100.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="pic32cm_gc_curiosity_pro"
-                       displayName="pic32cm_gc_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="pic32cm_gc_curiosity_pro" displayName="pic32cm_gc_curiosity_pro" projectFiles="true">
           <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/pic32cm_gc_curiosity_pro/bsp/bsp.c</itemPath>
           </logicalFolder>
@@ -268,9 +250,7 @@
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system/ff.c</itemPath>
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system/ffunicode.c</itemPath>
                 </logicalFolder>
-                <logicalFolder name="hardware_access"
-                               displayName="hardware_access"
-                               projectFiles="true">
+                <logicalFolder name="hardware_access" displayName="hardware_access" projectFiles="true">
                   <itemPath>../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access/diskio.c</itemPath>
                 </logicalFolder>
               </logicalFolder>
@@ -305,15 +285,15 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>PIC32CM5112GC00100</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>pkob4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32CM-GC00_DFP" vendor="Microchip" version="1.0.13"/>
+        <pack name="PIC32CM-GC00_DFP" vendor="Microchip" version="1.0.23"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
       </packs>
       <ScriptingSettings>
@@ -328,7 +308,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -336,9 +316,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -351,8 +331,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32cm_gc_curiosity_pro;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CM5112GC00100_DFP"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32cm_gc_curiosity_pro;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CM5112GC00100_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -449,8 +428,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/pic32cm_gc_curiosity_pro;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CM5112GC00100_DFP"/>
+        <property key="extra-include-directories" value="../src;../src/config/pic32cm_gc_curiosity_pro;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/file_system;../src/config/pic32cm_gc_curiosity_pro/system/fs/fat_fs/hardware_access;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/PIC32CM5112GC00100_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -484,12 +462,9 @@
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="arm.use_vtor" value="false"/>
         <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.interface" value="swd"/>
@@ -514,19 +489,16 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="8000000-2001ffff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/h3_core_apps/core_apps_pic32cm_sg_gc/apps/fs/nvm_fat/firmware/pic32cm_gc_curiosity_pro.X/debug/pic32cm_gc_curiosity_pro/pic32cm_gc_curiosity_pro_ptg"/>
+        <property key="programmerToGoFilePath" value="C:/h3_core_apps/core_apps_pic32cm_sg_gc/apps/fs/nvm_fat/firmware/pic32cm_gc_curiosity_pro.X/debug/pic32cm_gc_curiosity_pro/pic32cm_gc_curiosity_pro_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -541,8 +513,7 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.specifictoolpack"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.specifictoolpack"/>
         <property key="toolpack.updateoptions.packversion" value="1.16.1227"/>
         <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
         <property key="x.erase.type" value="ChipEraseAll"/>
@@ -550,12 +521,9 @@
       <pkob4hybrid>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="arm.use_vtor" value="false"/>
         <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.interface" value="swd"/>
@@ -580,8 +548,7 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="8000000-2001ffff"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
@@ -589,8 +556,7 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.default}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -605,8 +571,7 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.specifictoolpack"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.specifictoolpack"/>
         <property key="toolpack.updateoptions.packversion" value="1.16.1227"/>
       </pkob4hybrid>
     </conf>
