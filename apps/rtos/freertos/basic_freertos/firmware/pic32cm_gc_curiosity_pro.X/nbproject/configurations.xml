@@ -73,6 +73,7 @@
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/message_buffer.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h</itemPath>
             <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_prototypes.h</itemPath>
+            <itemPath>../src/third_party/rtos/FreeRTOS/Source/include/mpu_syscall_numbers.h</itemPath>
           </logicalFolder>
           <logicalFolder name="portable" displayName="portable" projectFiles="true">
             <logicalFolder name="GCC" displayName="GCC" projectFiles="true">
@@ -315,14 +316,14 @@
         <targetDevice>PIC32CM5112GC00100</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>pkob4hybrid</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.45</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
-        <pack name="PIC32CM-GC00_DFP" vendor="Microchip" version="1.0.13"/>
+        <pack name="PIC32CM-GC00_DFP" vendor="Microchip" version="1.0.23"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -614,6 +615,8 @@
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.specifictoolpack"/>
         <property key="toolpack.updateoptions.packversion" value="1.16.1227"/>
+        <property key="x.erase.key" value="0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF,0xFFFFFFFF"/>
+        <property key="x.erase.type" value="ChipEraseAll"/>
       </pkob4hybrid>
     </conf>
   </confs>
